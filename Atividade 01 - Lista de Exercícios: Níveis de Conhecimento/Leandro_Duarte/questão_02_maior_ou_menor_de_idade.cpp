@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    int numero;
+    int idade;
 
     cout << "Digite Sua Idade: ";
     cin >> idade;

@@ -5,9 +5,9 @@ int main() {
     int numero;
 
     cout << "Digite Sua Idade: ";
-    cin >> numero;
+    cin >> idade;
 
-    if (numero >= 18) {
+    if (idade >= 18) {
         cout << "Você é maior de idade" << endl;
     } else {
         cout << "Você é menor de idade" << endl;

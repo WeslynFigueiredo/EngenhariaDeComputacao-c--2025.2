@@ -1,0 +1,17 @@
+#include <iostream>
+#include <String>
+using namespace std;
+int main (){
+	string senha = "senha123";
+	while (true){
+		string senhaTentativa;
+		cout << "Digite a senha para entrar: "<<endl;
+		cin>>senhaTentativa;
+		if (senhaTentativa == senha){
+			cout<<"Acesso Concedido";
+			break;
+		}else{
+			cout<<"Senha incorreta"<<endl;
+		}
+	}
+}

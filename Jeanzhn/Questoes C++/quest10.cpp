@@ -1,0 +1,17 @@
+#include <iostream>
+#include <String>
+using namespace std;
+
+int main (){
+	int num;
+	cout<<"Digite um numero para ter sua tabuada completa: " << endl;
+	cin >> num;
+	int contador = 1;
+	while(true){
+		cout << num << " X " << contador << " = " << num *contador << endl;
+		contador++;
+		if (contador == 11){
+			break;
+		}
+	}
+}

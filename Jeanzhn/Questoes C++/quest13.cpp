@@ -1,0 +1,25 @@
+#include <iostream>
+#include <String>
+#include <cstdlib>
+using namespace std;
+
+int main(){
+	int sorteado = rand()% (100-0)+0;
+	int totalTentativas = 0;
+	cout<<"Bem vindo, para ser facil, o numero escolhido esta entre 0 a 100"<<endl;
+	while (true){
+		int tentativa;
+		cout<<"Tente adivinhar o numero sorteado, digite um numero: "<<endl;
+		cin>>tentativa;
+		totalTentativas ++;
+		if (tentativa > sorteado){
+			cout<<"O numero sorteado e menor que "<<tentativa<<endl;
+		}else if(tentativa < sorteado){
+			cout<<"O numero sorteado e maior que "<<tentativa<<endl;
+		}else if (tentativa == sorteado){
+			break;
+		}
+	}
+	cout<<"O sorteado foi: "<<sorteado << endl;
+	cout<<"E o total de tentativas foi: " <<totalTentativas<<endl;
+}

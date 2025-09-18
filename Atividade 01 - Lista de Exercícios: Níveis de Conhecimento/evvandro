@@ -1,0 +1,275 @@
+#MODULO2
+
+#questao6
+#include <iostream>
+
+using namespace std;
+int main(){
+
+int i = 1;
+	while(i<=100){
+		cout << i;
+		i++;
+	}
+	return 0;
+}
+
+
+#questao7
+#include <iostream>
+
+using namespace std;
+int main(){
+
+int i = 1;
+int soma = 0;
+	while(i <= 50){
+		soma += i;
+		i++;
+	}
+	cout << soma;
+
+}
+
+
+#questao8
+#include <iostream>
+
+using namespace std;
+int main(){
+
+int i = 1;
+
+	while(i <= 20){
+		if (i % 2 == 0){
+			cout << i;
+		}
+		i++;
+	}
+}
+
+#questao9
+#include <iostream>
+
+using namespace std;
+int main(){
+int soma = 0;
+int numero;
+cout <<"Digite seus numeros";
+
+
+	while (true){
+		cin >> numero;
+		if(numero == 0){
+			break;
+		}
+		soma += numero;	
+	}
+	cout << soma;
+}
+
+#questao10
+#include <iostream>
+
+using namespace std;
+int main(){
+int n, i = 1;
+cout <<"O numero para sua tabuada de 1 a 10";
+cin >> n;
+
+	while (i <= 10){
+		cout << n << " x " << i << " = " << n * i;
+		i++;
+	}
+}
+
+#questao11
+#include <iostream>
+
+using namespace std;
+int main(){
+int senha;
+
+
+	while(true){
+		cout << " digite sua senha: ";
+		cin >> senha;
+		if(senha == 1234){
+			cout << "Sua senha esta correta";
+		} else {
+			cout << "senha incorreta tente novamente";
+		}
+	}
+}
+
+#questao12
+#include <iostream>
+
+using namespace std;
+int main() {
+int sequencia[5];
+int nmrmaior;
+
+cout << "digite uma sequencia de 5 numeros";
+	for(int i=0 ;i<5 ; i++){
+		cin >> sequencia[i];
+	}
+	
+	nmrmaior = sequencia [0];
+	
+	for (int i = 0 ; i < 5; i++){
+		if(sequencia [i] > nmrmaior){
+			nmrmaior = sequencia[i];
+		}
+	}
+	cout << "O maior numeor e: " << nmrmaior;
+	return 0;
+}
+
+#MODULO3
+
+#questao13
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+int main() {
+srand(time(0));
+int nmrsecreto = rand() % 100 + 1;
+int palpite;
+int diferenca;
+cout <<"Tente advinhar o numero";
+
+	while(true){
+		cout << "digite seu palpite";
+		cin >> palpite;
+		
+		if (palpite == nmrsecreto){
+			cout <<"voce acerto";
+			break;
+		}
+		diferenca = abs(nmrsecreto - palpite);
+		if(diferenca <= 5){
+			cout <<" quente";
+		}else if (diferenca <= 15){
+			cout <<"morno";
+		}else{
+			cout <<"frio";
+		}
+}
+return 0;
+}
+
+
+#questao14
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+string frase;
+int contador = 0;
+
+cout <<"Digite uma frase";
+getline(cin, frase);
+
+	for (int i = 0; i < frase.length(); i++){
+		char c = tolower(frase[i]);
+		
+		if (c =='a'|| c =='e'|| c =='i'|| c =='o'|| c == 'u'){
+			contador++;
+		}
+	}
+	cout <<"A frase possui " << contador << " vogais";
+}
+
+#questao15
+#include <iostream>
+
+using namespace std;
+int main() {
+int n;
+long long fatorial = 1;
+
+cout << "Digite um nmr;";
+cin >> n;
+
+if(n<0){
+	cout << "Fatorial nao existe para negativos";
+}else if (n == 0 || n == 1){
+	cout << "O fatorial de " << n << " é 1 ";
+}else {
+	int i = 1;
+	while (i <= n) {
+		fatorial *= i;
+		i++;
+	}
+	cout << "O fatorial de " << n << " e: " << fatorial;
+}
+}
+
+#questao16
+
+#include <iostream>
+
+using namespace std;
+int main() {
+double numero, soma = 0;
+int contador = 0;
+cout << "digite os numeor para a media";
+	while(true){
+		cin >> numero;
+		
+		if(numero < 0){
+			break;
+		}
+		soma += numero;
+		contador++;
+	}
+	if (contador > 0){
+		double media = soma / contador;
+		cout << "Media dos nmrs: " << media;
+	}else {
+		cout << "nenhum nmr valido foi digitado";
+	}
+}
+
+#questao17
+
+#include <iostream>
+
+using namespace std;
+int main() {
+int n;
+
+cout << "Digite um numero inteiro";
+cin >> n;
+
+cout <<"Divisor de " << n << " sao ";
+
+	for (int i = 1;i <= n;i++){
+		if (n % i == 0){
+			cout << i << " ";
+		}
+	}
+	cout << endl;
+}
+
+#questao18
+
+#include <iostream>
+
+using namespace std;
+int main() {
+int n, soma = 0;
+cout << "Digite um numero inteiro";
+cin >> n;
+
+	while(n > 0){
+		soma += n % 10;
+		n/=10;
+	}
+	cout << "A soma dos digitos e: " << soma;
+}
+
+#questao19
+

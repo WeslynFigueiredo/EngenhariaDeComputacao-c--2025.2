@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+int main() {
+double numero, soma = 0;
+int contador = 0;
+cout << "digite os numeor para a media";
+	while(true){
+		cin >> numero;
+
+		if(numero < 0){
+			break;
+		}
+		soma += numero;
+		contador++;
+	}
+	if (contador > 0){
+		double media = soma / contador;
+		cout << "Media dos nmrs: " << media;
+	}else {
+		cout << "nenhum nmr valido foi digitado";
+	}
+}

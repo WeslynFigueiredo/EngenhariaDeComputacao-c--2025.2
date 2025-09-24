@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+int main(){
+int soma = 0;
+int numero;
+cout <<"Digite seus numeros";
+
+
+	while (true){
+		cin >> numero;
+		if(numero == 0){
+			break;
+		}
+		soma += numero;	
+	}
+	cout << soma;
+}

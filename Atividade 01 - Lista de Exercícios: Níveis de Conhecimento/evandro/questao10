@@ -1,0 +1,13 @@
+#include <iostream>
+
+using namespace std;
+int main(){
+int n, i = 1;
+cout <<"O numero para sua tabuada de 1 a 10";
+cin >> n;
+
+	while (i <= 10){
+		cout << n << " x " << i << " = " << n * i;
+		i++;
+	}
+}

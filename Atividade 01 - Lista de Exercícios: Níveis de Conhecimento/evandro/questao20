@@ -1,0 +1,24 @@
+include <iostream>;
+using namespace std;
+
+int main(){
+
+int numero;
+int fib = 0;
+int sequencia = 1;
+int proximo;
+
+cout << "Digite um nmr inteiro";
+cin >> numero;
+
+cout << "Fibonacci ate: " << numero;
+while(numero > 0) {
+  cout << fib <<"";
+  proximo = fib + sequencia;
+  fib = sequencia;
+  sequencia = proximo;
+  numero--;
+
+}
+
+}

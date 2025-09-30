@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int numeroEntrada = 0;
+    int soma = 0;
+    int digito;
+
+    cout << "Digite um numero, irei retornar a soma dos digitos: " << std::endl;
+    cin >> numeroEntrada;
+    int numeroOriginal = numeroEntrada;
+    while (numeroEntrada > 0) {
+        digito = numeroEntrada % 10;
+        soma += digito;
+        numeroEntrada /= 10;
+    }
+    cout << "A soma dos digitos de " << numeroOriginal << " e: " << soma << std::endl;
+}

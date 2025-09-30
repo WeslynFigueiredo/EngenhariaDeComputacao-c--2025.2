@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	int entrada = 0, fatorial = 0;
+	cout << "Digite um numero, retornarei sua fatorial: "<<endl;
+	cin>>entrada;
+	
+	while(true){
+		cout << "A fatorial de "<<entrada<< " e dada a seguir:"<<endl;
+		while(entrada != 1){
+			fatorial+= entrada * (entrada-1);
+			cout<< entrada<<"x"<< (entrada-1)<<" = "<< "fatorial momento >> "<< fatorial << endl;
+			entrada --;	
+		
+		}cout<<"Fatorial final = " << fatorial<<endl;break;
+	}
+}

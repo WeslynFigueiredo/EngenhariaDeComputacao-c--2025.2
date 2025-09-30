@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int numero;
+    cout << "Digite um numero inteiro para ter sua sequencia de Fibonacci: ";
+    cin >> numero;
+
+    int termo1 = 0, termo2 = 1, proximoTermo = 0;
+    int i = 1; 
+
+    while (i <= numero) {
+        if (i == 1) {
+            cout << termo1 << ", ";
+        } else if (i == 2) {
+            cout << termo2 << ", ";
+        } else {
+            proximoTermo = termo1 + termo2;
+            termo1 = termo2;
+            termo2 = proximoTermo;
+            cout << proximoTermo << ", ";
+        }
+        i++;
+    }
+    cout<<endl;
+}

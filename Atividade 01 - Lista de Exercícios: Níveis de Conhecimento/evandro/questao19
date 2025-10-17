@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+int numero, original, invertido = 0;
+
+cout <<"Digite um numero inteiro";
+cin >> numero;
+
+original = numero;
+
+while(numero >0) {
+  int digito = numero % 10;
+  invertido = (invertido *10) + digito;
+  numero = numero / 10;
+
+}
+if(original == invertido){
+  cout <<"o numero" << original << " e um numero palindromo";
+}else {
+  cout << "o numero" << original << "nao e um numero palindromo";
+
+}
+}
+

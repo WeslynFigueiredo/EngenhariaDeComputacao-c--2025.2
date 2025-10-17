@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+int main() {
+int sequencia[5];
+int nmrmaior;
+
+cout << "digite uma sequencia de 5 numeros";
+	for(int i=0 ;i<5 ; i++){
+		cin >> sequencia[i];
+	}
+
+	nmrmaior = sequencia [0];
+
+	for (int i = 0 ; i < 5; i++){
+		if(sequencia [i] > nmrmaior){
+			nmrmaior = sequencia[i];
+		}
+	}
+	cout << "O maior numeor e: " << nmrmaior;
+	return 0;
+}

@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+int main(){
+int senha;
+
+
+	while(true){
+		cout << " digite sua senha: ";
+		cin >> senha;
+		if(senha == 1234){
+			cout << "Sua senha esta correta";
+		} else {
+			cout << "senha incorreta tente novamente";
+		}
+	}
+}

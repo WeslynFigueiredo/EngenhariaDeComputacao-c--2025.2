@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+int main() {
+int n;
+
+cout << "Digite um numero inteiro";
+cin >> n;
+
+cout <<"Divisor de " << n << " sao ";
+
+	for (int i = 1;i <= n;i++){
+		if (n % i == 0){
+			cout << i << " ";
+		}
+	}
+	cout << endl;
+}

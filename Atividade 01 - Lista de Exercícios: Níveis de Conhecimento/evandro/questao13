@@ -1,0 +1,30 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+int main() {
+srand(time(0));
+int nmrsecreto = rand() % 100 + 1;
+int palpite;
+int diferenca;
+cout <<"Tente advinhar o numero";
+
+	while(true){
+		cout << "digite seu palpite";
+		cin >> palpite;
+
+		if (palpite == nmrsecreto){
+			cout <<"voce acerto";
+			break;
+		}
+		diferenca = abs(nmrsecreto - palpite);
+		if(diferenca <= 5){
+			cout <<" quente";
+		}else if (diferenca <= 15){
+			cout <<"morno";
+		}else{
+			cout <<"frio";
+		}
+}
+return 0;
+}

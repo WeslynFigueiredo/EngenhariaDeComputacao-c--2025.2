@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main (){
+	int numeroEntrada = 0;
+	cout << "Leitor de numero, digite um numero e mostrarei seus divisores: "<< endl;
+	cin>>numeroEntrada;
+	while (true){
+		int i= 1;
+		while(i<= numeroEntrada){
+			if (numeroEntrada % i== 0){
+				cout << "Divisor: " << i <<endl;
+			}
+			i++;
+		}
+		break;
+	}
+}

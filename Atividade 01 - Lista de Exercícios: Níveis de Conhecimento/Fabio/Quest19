@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int numero, numeroInvertido = 0, resto, numeroOriginal;
+	cout << "Digite um numero inteiro para verificar se e um palindromo: ";
+    cin >> numero;
+    numeroOriginal = numero; 
+    
+    while (numero > 0) {
+        resto = numero % 10;
+        numeroInvertido = numeroInvertido * 10 + resto;
+        numero /= 10;
+    }
+    if (numeroOriginal == numeroInvertido) {
+    	cout << numeroOriginal << " e um numero palindromo." << std::endl;
+    } else {
+        cout << numeroOriginal << " nao e um numero palindromo." << std::endl;
+    }
+}

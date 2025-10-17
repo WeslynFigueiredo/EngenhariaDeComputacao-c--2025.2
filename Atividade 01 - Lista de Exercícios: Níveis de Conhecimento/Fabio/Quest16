@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	int entradas = 0; 
+	int totalEntradas = 0; 
+	int numeros;
+	cout<<"Farei a medias dos numeros digitados, Para desejar parar adicione um valor negativo :)"<< endl;
+	
+	while (true){
+		cout << "Digite um valor: "<<endl;
+		cin >> numeros;
+		if (numeros < 0){
+			break;
+		}
+		totalEntradas++; 
+		entradas += numeros;
+	}
+	cout<<"A media dos numeros foi: "<< entradas/totalEntradas <<endl;
+}

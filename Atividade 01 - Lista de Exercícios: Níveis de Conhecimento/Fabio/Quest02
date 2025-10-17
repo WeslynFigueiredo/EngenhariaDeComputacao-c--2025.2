@@ -1,0 +1,13 @@
+#include <iostream>
+int main(){
+	int numInicial;
+	
+	std::cout << "coloca a tua idade ai: ";
+	std::cin >> numInicial;
+	
+	if (numInicial >= 18){
+		std::cout << "Voce tem "<<numInicial<< " anos e portanto e maior de idade" << std::endl;
+	} else {
+		std::cout << "Voce nao e maior de idade pois tem "<<numInicial<< " anos" << std::endl;
+	}	
+}
